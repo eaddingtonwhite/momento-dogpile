@@ -7,7 +7,7 @@ Demo showing Momento serverless cache w/ dogpile wrapper
 2. Run:
 ```
  $ MOMENTO_CACHE=default \
- MOMENTO_AUTH_TOKEN=** \
+ MOMENTO_API_KEY=** \
     pipenv run python example_usage.py
 
 world
