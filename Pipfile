@@ -4,8 +4,8 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-momento = "==0.16.1"
-"dogpile.cache" = "==1.1.8"
+momento = "==1.12.0"
+"dogpile.cache" = "==1.2.2"
 
 [dev-packages]
 

@@ -1,3 +1,4 @@
+from datetime import timedelta
 import os
 
 from dogpile.cache import make_region
@@ -11,9 +12,9 @@ region = make_region("myregion")
 region.configure(
     "momento",
     arguments={
-        'authToken': os.getenv("MOMENTO_AUTH_TOKEN"),
+        'apiKey': os.getenv("MOMENTO_API_KEY"),
         'cacheName': os.getenv("MOMENTO_CACHE"),
-        'ttl': 3600,
+        'ttl': timedelta(seconds=60),
     })
 
 # Test basic string key
